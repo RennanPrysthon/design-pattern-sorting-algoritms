@@ -17,7 +17,7 @@ public class HistogramView implements SortingViewStrategy{
 
         for (int index = 0; index < qtd; index++) {
             int number = numbers.get(index);
-            g.setColor(Color.MAGENTA);
+            g.setColor(new Color((int)(Math.random() * 0x1000000)));
             g.fillRect(index * (width + innerSpace) + outerSpace, panelHeight - number * height - outerSpace, width, width);
         }
     }
